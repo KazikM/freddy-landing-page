@@ -1,9 +1,16 @@
-const arrow = document.querySelector('.js-scroll')
-const content = document.querySelector('#experience')
+const arrow = document.querySelector('.js-scroll-arrow')
+const experience = document.querySelector('#experience')
+const meetBtn = document.querySelector('.js-scroll-btn')
+const meetFreddy = document.querySelector('#meet-freddy')
 
 arrow.addEventListener('click', () => {
-  content.scrollIntoView({ behavior: "smooth" })
+  experience.scrollIntoView({ behavior: "smooth" })
 })
+
+meetBtn.addEventListener('click', () => {
+  meetFreddy.scrollIntoView({ behavior: "smooth" })
+})
+
 
 const typeWriter = selector => {
   const el = document.querySelector(selector)

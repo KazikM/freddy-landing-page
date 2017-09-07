@@ -186,7 +186,6 @@ section {
 
 
 .c-exp {
-  width: 100%;
   color: #6c6c6c;
   background-image: 
     repeating-linear-gradient(
@@ -306,6 +305,31 @@ section {
   line-height: 1.4;
   padding: 20px;
 }
+
+.c-meet {
+  color: #6c6c6c;
+  background-image: 
+    repeating-linear-gradient(
+      90deg,
+      #fff,
+      #fff 150px,
+      #eee 150px,
+      #eee 151px
+    );
+}
+
+.c-meet__photo {
+  max-width: 80vw;
+  height: auto;
+}
+
+.c-meet__text {
+  padding: 10px;
+  font-size: 15px;
+  line-height: 1.3;
+}
+
+
 
 .c-footer {
   width: 100%;
