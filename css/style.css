@@ -65,6 +65,19 @@ a {
 }
 
 .c-header {
+  position: relative;
+  background-color: #111;
+}
+
+.c-header__video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+}
+
+.c-header__container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -73,16 +86,7 @@ a {
   position: relative;
 }
 
-.c-header-video {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  position: absolute;
-  z-index: -1;
-}
-
-.c-header-top {
+.c-header__container-top {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -90,7 +94,7 @@ a {
   padding-top: 40px;
 }
 
-.c-header-top__logo {
+.c-header__container-top__logo {
   display: flex;
   flex-wrap: nowrap;
   text-transform: uppercase;
@@ -99,52 +103,48 @@ a {
   color: #fff;
 }
 
-.c-header-top__bar {
+.c-header__container-top__bar {
   display: flex;
   flex-direction: row;
   margin-right: -15px;
 }
 
-.c-header-top__links {
+.c-header__container-top__links {
   display: flex;
   flex-direction: row;
   color: #fff;
 }
 
-.c-header-top__el {
+.c-header__container-top__el {
   padding-right: 15px;
   padding-left: 15px;
 }
 
-.c-header-top__title {
+.c-header__container-top__title {
   color: rgba(225, 225, 225, .5);
 }
 
-.c-header-center {
+.c-header__container-center {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.c-header-center__description {
+.c-header__container-center__description {
   margin-bottom: 25px;
   text-align: center;
   color: #fff;
 }
 
-.c-header-center__description > br {
+.c-header__container-center__description > br {
   display: none;
 }
 
-.c-header-center__title {
-  font-size: 53px;
-  font-weight: 300;
-  text-align: center;
-  line-height: 1.2;
+.c-header__container-center__title {
   color: #fff;
 }
 
-.c-header-center__btn {
+.c-header__container-center__btn {
   margin-top: 30px;
   padding: 12px;
   background-color: transparent;
@@ -153,23 +153,23 @@ a {
   transition: all .7s;
 }
 
-.c-header-center__btn:hover{
+.c-header__container-center__btn:hover{
   box-shadow: 150px 0 0 0 #9e0b0f inset;
 }
 
-.c-header-bottom {
+.c-header__container-bottom {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-bottom: 30px;
 }
 
-.c-header-bottom__copyright {
+.c-header__container-bottom__copyright {
   align-self: flex-end;
   color: rgba(225, 225, 225, .5);
 }
 
-.c-header-bottom__btn {
+.c-header__container-bottom__btn {
   animation: move 1s infinite alternate ease-in-out;
   background-color: transparent;
   border: none;
@@ -179,7 +179,74 @@ a {
   to { transform: translateY(10px) }
 }
 
+
+.c-exp {
+  width: 100%;
+  color: #6c6c6c;
+  background-image: 
+    repeating-linear-gradient(
+      90deg,
+      #fff,
+      #fff 150px,
+      #eee 150px,
+      #eee 151px
+    );
+}
+
+.c-exp__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 120px;
+  padding-bottom: 40px;
+}
+
+.c-exp__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 80px;
+}
+
+.c-exp__title {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.c-exp__el {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+}
+
+.c-exp__el__title {
+  padding-bottom: 25px;
+  font-size: 19px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.c-exp__el__text {
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 1.4;
+}
+
+.c-exp__el__text--red {
+  color: #9e0b0f;
+  font-weight: 700;
+}
+
+.c-exp__el__icon {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
 .c-footer {
+  width: 100%;
   background-color: #222;
 }
 
@@ -192,7 +259,7 @@ a {
   padding-bottom: 40px;
 }
 
-.c-footer-content__logo {
+.c-footer-logo {
   display: flex;
   flex-wrap: nowrap;
   text-transform: uppercase;
@@ -201,28 +268,28 @@ a {
   color: #fff;
 }
 
-.c-footer-content__bar {
+.c-footer-bar {
   display: flex;
   flex-direction: row;
   margin-left: -15px;
 }
 
-.c-footer-content__links {
+.c-footer-links {
   display: flex;
   flex-direction: row;
   color: #fff;
 }
 
-.c-footer-content__el {
+.c-footer-el {
   padding-right: 15px;
   padding-left: 15px;
 }
 
-.c-footer-content__title {
+.c-footer-title {
   color: rgba(225, 225, 225, .5);
 }
 
-.c-footer__copyright {
+.c-footer-copyright {
   align-self: flex-end;
   color: rgba(225, 225, 225, .5);
 }
@@ -233,59 +300,67 @@ a {
   font-weight: 700;
 }
 
+.headline {
+  font-size: 53px;
+  font-weight: 300;
+  line-height: 1.2;
+  text-align: center;
+}
+
 @media (max-width: 660px) {
-  .c-header-top__title {
+  .c-header__container-top__title {
     display: none;
   }
 
-  .c-header-bottom__copyright {
+  .c-header__container-bottom__copyright {
     align-self: center;
     padding-top: 30px;
   }
 
-  .c-footer-content__title {
+  .c-footer-title {
     display: none;
   }
 
-  .c-footer__copyright {
+  .c-footer-copyright {
     align-self: center;
   }
 }
 
 @media (max-width: 560px) {
-  .c-header-top {
+  .c-header__container-top {
     flex-direction: column;
     align-items: center;
   }
   
-  .c-header-top__bar {
+  .c-header__container-top__bar {
     margin-right: 0;
     padding-top: 20px;
     padding-bottom: 30px;
   }
   
-  .c-header-center__description > br {
+  .c-header__container-center__description > br {
     display: block;
   }
   
-  .c-header-center__description > span {
+  .c-header__container-center__description > span {
     display: none;
   }
 
-  .c-header-center__description {
+  .c-header__container-center__description {
     line-height: 1.5;
   }
 
-  .c-header-center__title {
+  .headline {
     font-size: 40px;
   }
+
 
   .c-footer-content {
     flex-direction: column;
     align-items: center;
   }
   
-  .c-footer-content__bar {
+  .c-footer-bar {
     margin-right: 0;
     padding-top: 20px;
     padding-bottom: 30px;
@@ -293,16 +368,16 @@ a {
 }
 
 @media (max-width: 390px) {
-  .c-header-top__el {
+  .c-header__container-top__el {
     padding-left: 10px;
     padding-right: 10px;
   }
 
-  .c-header-center__title {
+  .headline {
     font-size: 35px;
   }
 
-  .c-footer-content__el {
+  .c-footer-el {
     padding-left: 10px;
     padding-right: 10px;
   }

@@ -1,5 +1,5 @@
 const arrow = document.querySelector('.js-scroll')
-const content = document.querySelector('#content')
+const content = document.querySelector('#experience')
 
 arrow.addEventListener('click', () => {
   content.scrollIntoView({ behavior: "smooth" })
