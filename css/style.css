@@ -18,7 +18,7 @@ a {
 
 section {
   padding-top: 100px;
-  padding-bottom: 40px;
+  padding-bottom: 100px;
 }
 
 textarea {
@@ -215,7 +215,6 @@ textarea {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 80px;
 }
 
 .c-exp__title {
@@ -326,14 +325,14 @@ textarea {
     );
 }
 
-.c-meet__container {
-  justify-content: center;
+.c-meet__photo {
+  margin-left: auto;
+  display: block;
+  max-width: 80vw;
 }
 
-.c-meet__photo {
-  max-width: 80vw;
-  height: auto;
-  padding-right: 0;
+.c-meet__title {
+  padding-bottom: 30px;
 }
 
 .c-meet__text {
@@ -541,11 +540,15 @@ textarea:focus:-moz-placeholder {
   line-height: 1.2;
   text-align: center;
 }
- 
+
 @media (max-width: 900px) {
    input, textarea {
       width: 60vw;
     }
+    .c-meet__container {
+      flex-direction: column;
+      align-items: center;
+  }
 }
 
 @media (max-width: 660px) {
