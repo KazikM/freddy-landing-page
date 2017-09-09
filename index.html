@@ -15,7 +15,7 @@
 
 <body>
   <header class="c-header">
-    <video class='c-header__video' playsinline autoplay loop muted poster="assets/header-poster.png">
+    <video class='c-header__video' playsinline autoplay loop muted poster="assets/header-poster.jpg">
       <source src='assets/header-video.mp4' type='video/mp4'>
     </video>
     <div class="c-header__container">
@@ -82,7 +82,7 @@
         </div>
       </div>
       <div class="c-exp__content ">
-        <span class="c-exp__title--small c-small-text ">education</span>
+        <span class="c-exp__title--small c-small-text" style="margin-top: 70px">education</span>
         <div class="o-grid o-grid--2 ">
           <div class="c-exp__el ">
             <img src="assets/harvard.png " alt="Harvard University Logo " class="c-exp__icon ">
@@ -123,7 +123,7 @@
   <section class="c-meet" id="meet-freddy">
     <div class="o-content-container">
       <div class=" c-meet__container o-grid o-grid--2-2">
-        <div>
+        <div style="flex-basis: auto;">
           <img class="c-meet__photo" src="assets/freddy-j-nager.png" alt="Freddy J. Nager">
         </div>
         <div>
@@ -183,23 +183,23 @@
     <div class="c-form__container o-content-container">
       <span class="c-form__title--small c-small-text">get in touch</span>
       <h1 class="c-form__title c-headline">Want Freddy to speak at your event <br />or consult your marketing plan?</h1>
-      <form action="">
+      <form action="submit.php">
         <div class="c-form__form">
           <div class="c-form__el">
-            <input id="name" type="text" placeholder="Your Name">
-            <label for="name">required</label>
+            <input id="name" type="text" placeholder="Your Name" required>
+            <span for="name">required</span>
           </div>
           <div class="c-form__el">
-            <input id="mail" type="email" placeholder="Your Email">
-            <label for="mail">required</label>
+            <input id="mail" type="email" placeholder="Your Email" required>
+            <span for="mail">required</span>
           </div>
           <div class="c-form__el">
-            <textarea id="message" placeholder="What’s your biggest challenge?"></textarea>
-            <label for="message">required</label>
+            <textarea id="message" placeholder="What’s your biggest challenge?" rows="1" required></textarea>
+            <span for="message">required</span>
           </div>
         </div>
         <div class="c-form__el">
-          <button class="c-btn c-small-text">submit inquiry</button>
+          <button class="c-btn c-small-text" type="submit">submit inquiry</button>
         </div>
       </form>
     </div>
