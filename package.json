@@ -1,5 +1,10 @@
 {
   "scripts": {
-    "start": "browser-sync start --server  --files \"**/*[.html|.css|.js]\""
+    "start": "browser-sync start --server  --files \"**/*[.html|.css|.js]\"",
+    "autoprefixer": "postcss css/style.css -o css/style.prefixed.css --use autoprefixer --no-map"
+  },
+  "devDependencies": {
+    "autoprefixer": "^7.1.4",
+    "postcss-cli": "^4.1.1"
   }
 }
