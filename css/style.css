@@ -6,11 +6,6 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
-button {
-  cursor: pointer;
-  font: inherit;
-}
-
 a {
   text-decoration: none;
   color: inherit;

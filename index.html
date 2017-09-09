@@ -9,13 +9,13 @@
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,700" rel="stylesheet">
-  <script src="script.js" defer></script>
-  <script src="smoothscroll.js" defer></script>
+  <script src="js/anime.min.js" defer></script>
+  <script src="js/script.js" defer></script>
 </head>
 
 <body>
   <header class="c-header">
-    <video class='c-header__video' autoplay loop muted poster="assets/header-poster.png">
+    <video class='c-header__video' playsinline autoplay loop muted poster="assets/header-poster.png">
       <source src='assets/header-video.mp4' type='video/mp4'>
     </video>
     <div class="c-header__container">
@@ -24,10 +24,10 @@
         <div class="c-header__bar c-small-text">
           <span class="c-header__el c-header__el--grey">connect:</span>
           <ul class="c-header__links">
-            <li><a href="http://www.linkedin.com/in/freddyjnager" class="c-header__el">linkedin</a></li>
-            <li><a href="https://twitter.com/AtomicTango" class="c-header__el">twitter</a></li>
-            <li><a href="http://www.atomictango.com/" class="c-header__el">blog</a></li>
-            <li><a href="mailto:freddy@atomictango.com" class="c-header__el">contact</a></li>
+            <li><a href="http://www.linkedin.com/in/freddyjnager" class="c-header__el" target="_blank">linkedin</a></li>
+            <li><a href="https://twitter.com/AtomicTango" class="c-header__el" target="_blank">twitter</a></li>
+            <li><a href="http://www.atomictango.com/" class="c-header__el" target="_blank">blog</a></li>
+            <li><a href="mailto:freddy@atomictango.com" class="c-header__el" target="_blank">contact</a></li>
           </ul>
         </div>
       </div>
@@ -36,14 +36,15 @@
         professor
           |  writer  |  speaker</span>
         <h1 class="c-header__title c-headline js-type-writer">Award-Winning Creative Director, <br> Content Strategist and Marketing Professor</h1>
-        <button class="c-btn c-btn--white c-small-text js-scroll-btn">meet freddy</button>
+        <a href="#meet-freddy" class="c-btn c-btn--white c-small-text js-scroll-to">meet freddy</a>
       </div>
       <div class="o-base-container c-header__bottom">
-        <button class="c-header__arrow js-scroll-arrow">
-        <svg width="18" height="28" viewBox="0 0 36 56">
-          <path fill="#fff" d="M33.6 23q0 0.4-0.3 0.7l-14.6 14.6q-0.3 0.3-0.7 0.3t-0.7-0.3l-14.6-14.6q-0.3-0.3-0.3-0.7t0.3-0.7l1.6-1.6q0.3-0.3 0.7-0.3t0.7 0.3l12.3 12.3 12.3-12.3q0.3-0.3 0.7-0.3t0.7 0.3l1.6 1.6q0.3 0.3 0.3 0.7z" />
-        </svg>
-      </button>
+        <a href="#experience" class="c-header__arrow js-scroll-to">
+          <svg width="18" height="28" viewBox="0 0 36 56">
+            <path fill="#fff" d="M33.6 23q0 0.4-0.3 0.7l-14.6 14.6q-0.3 0.3-0.7 0.3t-0.7-0.3l-14.6-14.6q-0.3-0.3-0.3-0.7t0.3-0.7l1.6-1.6q0.3-0.3 0.7-0.3t0.7 0.3l12.3 12.3 12.3-12.3q0.3-0.3 0.7-0.3t0.7 0.3l1.6 1.6q0.3 0.3 0.3 0.7z"
+            />
+          </svg>
+        </a>
         <span class="c-header__copyright c-small-text">© 2017 Freddy J. Nager</span>
       </div>
     </div>
@@ -68,9 +69,9 @@
           </div>
           <div class="c-exp__el ">
             <h2 class="c-exp__subtitle ">creative strategist</h2>
-            <p class="c-exp__text ">Founded creative strategy agency, <a href="http://www.atomictango.com/" class="c-exp__text--red ">Atomic Tango</a>              serving entrepreneurs and evolved it into a media company with multiple ventures from <a href="http://www.atomictango.com/about/atomic-tango-marketing-podcast/"
+            <p class="c-exp__text ">Founded creative strategy agency, <a href="http://www.atomictango.com/" class="c-exp__text--red" target="_blank">Atomic Tango</a>              serving entrepreneurs and evolved it into a media company with multiple ventures from <a href="http://www.atomictango.com/about/atomic-tango-marketing-podcast/"
                 class="c-exp__text--red
-    ">podcasts</a> to a popular <a href="http://www.atomictango.com/" class="c-exp__text--red ">blog</a> for creative professionals.
+    " target="_blank">podcasts</a> to a popular <a href="http://www.atomictango.com/" class="c-exp__text--red" target="_blank">blog</a>              for creative professionals.
             </p>
           </div>
           <div class="c-exp__el ">
@@ -209,10 +210,10 @@
       <div class="c-footer__bar c-small-text ">
         <span class="c-footer__el c-footer__title ">connect:</span>
         <ul class="c-footer__links ">
-          <li><a href="http://www.linkedin.com/in/freddyjnager " class="c-footer__el ">linkedin</a></li>
-          <li><a href="https://twitter.com/AtomicTango " class="c-footer__el ">twitter</a></li>
-          <li><a href="http://www.atomictango.com/ " class="c-footer__el ">blog</a></li>
-          <li><a href="mailto:freddy@atomictango.com " class="c-footer__el ">contact</a></li>
+          <li><a href="http://www.linkedin.com/in/freddyjnager " class="c-footer__el " target="_blank">linkedin</a></li>
+          <li><a href="https://twitter.com/AtomicTango " class="c-footer__el " target="_blank">twitter</a></li>
+          <li><a href="http://www.atomictango.com/ " class="c-footer__el " target="_blank">blog</a></li>
+          <li><a href="mailto:freddy@atomictango.com " class="c-footer__el " target="_blank">contact</a></li>
         </ul>
       </div>
       <span class="c-footer__copyright c-small-text ">© 2017 Freddy J. Nager</span>
