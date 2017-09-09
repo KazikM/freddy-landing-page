@@ -34,6 +34,14 @@
 
 body {
   font-family: 'Open Sans', sans-serif;
+  background-image: 
+  repeating-linear-gradient(
+    90deg,
+    #fff,
+    #fff 150px,
+    #eee 150px,
+    #eee 151px
+  );
 }
 
 a {
@@ -240,14 +248,6 @@ textarea {
 
 .c-exp {
   color: #6c6c6c;
-  background-image: 
-    repeating-linear-gradient(
-      90deg,
-      #fff,
-      #fff 150px,
-      #eee 150px,
-      #eee 151px
-    );
 }
 
 .c-exp__container {
@@ -360,14 +360,6 @@ textarea {
 
 .c-meet {
   color: #6c6c6c;
-  background-image: 
-    repeating-linear-gradient(
-      90deg,
-      #fff,
-      #fff 150px,
-      #eee 150px,
-      #eee 151px
-    );
 }
 
 
@@ -434,14 +426,6 @@ textarea {
 
 .c-form {
   color: #6c6c6c;
-  background-image: 
-  repeating-linear-gradient(
-    90deg,
-    #fff,
-    #fff 150px,
-    #eee 150px,
-    #eee 151px
-  );
 }
 
 .c-form__container {
@@ -611,6 +595,17 @@ textarea:focus:-moz-placeholder {
 }
 
 @media (max-width: 670px) {
+  body {
+    background-image: 
+    repeating-linear-gradient(
+      90deg,
+      #fff,
+      #fff 75px,
+      #eee 75px,
+      #eee 76px
+    );
+  }
+
   .c-header__el--grey {
     display: none;
   }
