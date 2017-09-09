@@ -605,10 +605,6 @@ textarea:focus:-moz-placeholder {
     margin-top: 10px;
   }
 
-  .c-meet__text {
-    text-align: center;
-  }
-
   .c-form__title > br {
     display: none;
   }
@@ -620,7 +616,7 @@ textarea:focus:-moz-placeholder {
   }
 
   .c-header__copyright {
-    align-self;
+    align-self: center;
     padding-top: 30px;
   }
 
