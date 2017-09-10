@@ -11,7 +11,7 @@
   <link rel="preload" as="font" type="font/woff2" crossorigin href="https://fonts.gstatic.com/s/opensans/v14/DXI1ORHCpsQm3Vp6mXoaTegdm0LZdjqr5-oayXSOefg.woff2">
   <link rel="preload" as="font" type="font/woff2" crossorigin href="https://fonts.gstatic.com/s/opensans/v14/xjAJXh38I15wypJXxuGMBo4P5ICox8Kq3LLUNMylGO4.woff2">
   <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.prefixed.css">
   <script src="js/anime.min.js" defer></script>
   <script src="js/script.js" defer></script>
 </head>
@@ -23,7 +23,8 @@
     </video>
     <div class="c-header__container">
       <div class="o-base-container c-header__top">
-        <svg width="210" viewBox="0 0 313.2 23.6">
+        <svg width="210" viewBox="0 0 313.2 23.6" aria-labelledby="logo" role="img">
+          <title id="logo">Freddy J. Nager</title>
           <path fill="#fff" d="M10.5 4.4H3.2v5h7v3h-7v10H0v-21h10.5v3zm16.3 9l6.5 8.9h-3.9l-6-8.6h-.6v8.6h-3.2V1.4h3.7c2.8 0 4.8.5 6 1.6 1.4 1.2 2 2.7 2 4.6 0 1.5-.4 2.8-1.3 3.8-.7 1.1-1.9 1.7-3.2 2zm-4-2.4h1c3 0 4.5-1.1 4.5-3.4 0-2.1-1.5-3.2-4.4-3.2h-1.1V11zm30.7-6.6h-8.4v5h8.1v3h-8.1v7h8.4v3H41.9v-21h11.6v3zm9.7 18v-21h4.4c2.1 0 3.8.2 5 .6 1.3.4 2.5 1.1 3.6 2.1 2.2 2 3.2 4.6 3.2 7.8s-1.1 5.8-3.4 7.8c-1.1 1-2.3 1.7-3.6 2.1-1.2.4-2.8.6-4.9.6h-4.3zm3.1-3h1.4c1.4 0 2.6-.1 3.5-.4s1.8-.8 2.5-1.5c1.6-1.4 2.3-3.3 2.3-5.5 0-2.3-.8-4.2-2.3-5.6-1.4-1.3-3.4-1.9-6.1-1.9h-1.4l.1 14.9zm22.6 3v-21h4.4c2.1 0 3.8.2 5 .6 1.3.4 2.5 1.1 3.6 2.1 2.2 2 3.2 4.6 3.2 7.8s-1.1 5.8-3.4 7.8c-1.1 1-2.3 1.7-3.6 2.1-1.2.4-2.8.6-4.9.6h-4.3zm3.2-3h1.4c1.4 0 2.6-.1 3.5-.4s1.8-.8 2.5-1.5c1.6-1.4 2.3-3.3 2.3-5.5 0-2.3-.8-4.2-2.3-5.6-1.4-1.3-3.4-1.9-6.1-1.9H92l.1 14.9zm25.7-6.1L111 1.4h3.6l4.8 8.4 4.8-8.4h3.6l-6.9 11.9v9h-3.2l.1-9zm38.5-11.9V15c0 1.6-.1 2.8-.3 3.6-.2.9-.6 1.7-1.2 2.3-1.1 1.2-2.5 1.9-4.2 1.9-1.3 0-2.6-.3-3.7-1l1.5-2.7c.8.5 1.5.8 2.2.8.9 0 1.6-.4 2-1.1s.6-2 .6-3.7V1.4h3.1zm10.4 19.4c0-.5.2-.9.6-1.3.4-.4.8-.6 1.3-.6s1 .2 1.3.6c.4.4.6.8.6 1.3s-.2 1-.6 1.3c-.4.4-.8.5-1.3.5s-1-.2-1.3-.5c-.4-.3-.6-.7-.6-1.3zm28.4 1.6V0l15.3 16V1.4h3.2v22.2L198.2 7.7v14.7h-3.1zm41.4-5.1h-9l-2.3 5.1h-3.4L232.2.2l10 22.2h-3.5l-2.2-5.1zm-1.3-3l-3.1-7.1-3.3 7.1h6.4zm25-2.8h8.6v.7c0 1.6-.2 3-.6 4.2-.4 1.1-1 2.2-1.8 3.1-1.9 2.2-4.4 3.3-7.4 3.3-2.9 0-5.4-1.1-7.5-3.2s-3.1-4.7-3.1-7.6c0-3 1.1-5.6 3.2-7.7 2.1-2.1 4.7-3.2 7.8-3.2 1.6 0 3.2.3 4.6 1s2.7 1.8 4 3.3l-2.3 2.2c-1.7-2.3-3.8-3.4-6.3-3.4-2.2 0-4.1.8-5.6 2.3s-2.2 3.4-2.2 5.6c0 2.3.8 4.3 2.5 5.8 1.6 1.4 3.3 2.1 5.1 2.1 1.6 0 3-.5 4.2-1.6s1.9-2.3 2.1-3.8h-5.2v-3.1h-.1zm29.7-7.1h-8.4v5h8.1v3h-8.1v7h8.4v3h-11.6v-21h11.6v3zm16.8 9l6.5 8.9h-3.9l-6-8.6h-.6v8.6h-3.2V1.4h3.7c2.8 0 4.8.5 6 1.6 1.4 1.2 2 2.7 2 4.6 0 1.5-.4 2.8-1.3 3.8-.7 1.1-1.8 1.7-3.2 2zm-4-2.4h1c3 0 4.5-1.1 4.5-3.4 0-2.1-1.5-3.2-4.4-3.2h-1.1V11z"
           />
         </svg>
@@ -37,7 +38,7 @@
           </ul>
         </div>
       </div>
-      <div class="o-content-container c-header__center">
+      <div class="o-content-container c-header__center js-reveal">
         <span class="c-header__description c-small-text">brand strategist  |  marketing
         professor
           |  writer  |  speaker</span>
@@ -57,47 +58,47 @@
   </header>
 
   <section class="c-exp" id="experience">
-    <div class="c-exp__container o-content-container ">
-      <div class="c-exp__content ">
-        <span class="c-exp__title--small c-small-text ">experience</span>
-        <h1 class="c-exp__title c-headline ">Freddy has over two decades of business experience serving clients, writing articles, and is currently teaching in
+    <div class="c-exp__container o-content-container">
+      <div class="c-exp__content">
+        <span class="c-exp__title--small c-small-text js-reveal">experience</span>
+        <h1 class="c-exp__title c-headline js-reveal">Freddy has over two decades of business experience serving clients, writing articles, and is currently teaching in
           the USC Master of Communication Management program.</h1>
-        <div class="o-grid o-grid--2 ">
-          <div class="c-exp__el ">
-            <h2 class="c-exp__subtitle ">senior copywriter</h2>
-            <p class="c-exp__text ">Teamed with senior designers to create award-winning campaigns for leading ad agency, Saatchi & Saatchi. Created
+        <div class="o-grid o-grid--2">
+          <div class="c-exp__el js-reveal">
+            <h2 class="c-exp__subtitle">senior copywriter</h2>
+            <p class="c-exp__text">Teamed with senior designers to create award-winning campaigns for leading ad agency, Saatchi & Saatchi. Created
               “voice” and all editorial for $5 million Toyota website</p>
           </div>
-          <div class="c-exp__el ">
-            <h2 class="c-exp__subtitle ">senior content director</h2>
-            <p class="c-exp__text ">Directed content for all West Coast clients of multimedia ad agency, Magnet Interactive including branding for
+          <div class="c-exp__el js-reveal">
+            <h2 class="c-exp__subtitle">senior content director</h2>
+            <p class="c-exp__text">Directed content for all West Coast clients of multimedia ad agency, Magnet Interactive including branding for
               $6 million Nissan/Infiniti account.</p>
           </div>
-          <div class="c-exp__el ">
-            <h2 class="c-exp__subtitle ">creative strategist</h2>
-            <p class="c-exp__text ">Founded creative strategy agency, <a href="http://www.atomictango.com/" class="c-exp__text--red" target="_blank">Atomic Tango</a>              serving entrepreneurs and evolved it into a media company with multiple ventures from <a href="http://www.atomictango.com/about/atomic-tango-marketing-podcast/"
-                class="c-exp__text--red
-    " target="_blank">podcasts</a> to a popular <a href="http://www.atomictango.com/" class="c-exp__text--red" target="_blank">blog</a>              for creative professionals.
+          <div class="c-exp__el js-reveal">
+            <h2 class="c-exp__subtitle">creative strategist</h2>
+            <p class="c-exp__text">Founded creative strategy agency, <a href="http://www.atomictango.com/" class="c-exp__text--red" target="_blank">Atomic Tango</a>              serving entrepreneurs and evolved it into a media company with multiple ventures from <a href="http://www.atomictango.com/about/atomic-tango-marketing-podcast/"
+                class="c-exp__text--red" target="_blank">podcasts</a> to a popular <a href="http://www.atomictango.com/" class="c-exp__text--red"
+                target="_blank">blog</a> for creative professionals.
             </p>
           </div>
-          <div class="c-exp__el ">
-            <h2 class="c-exp__subtitle ">founder & author</h2>
-            <p class="c-exp__text ">Through a book, courses, and corporate workshops, The Influencer Code reveals how to identify, hire, and manage
+          <div class="c-exp__el js-reveal">
+            <h2 class="c-exp__subtitle">founder & author</h2>
+            <p class="c-exp__text">Through a book, courses, and corporate workshops, The Influencer Code reveals how to identify, hire, and manage
               influencers AND increase personal influence to achieve goals.</p>
           </div>
         </div>
       </div>
-      <div class="c-exp__content ">
-        <span class="c-exp__title--small c-small-text" style="margin-top: 70px">education</span>
-        <div class="o-grid o-grid--2 ">
-          <div class="c-exp__el ">
-            <img src="assets/harvard.png " alt="Harvard University Logo " class="c-exp__icon ">
-            <h2 class="c-exp__subtitle ">harvard university</h2>
-            <p class="c-exp__text ">B.A. East Asian Studies and Sociology<br /> Harvard Crimson Photo Editor</p>
+      <div class="c-exp__content">
+        <span class="c-exp__title--small c-small-text js-reveal" style="margin-top: 70px">education</span>
+        <div class="o-grid o-grid--2">
+          <div class="c-exp__el js-reveal">
+            <img src="assets/harvard.png" alt="Harvard University Logo" class="c-exp__icon">
+            <h2 class="c-exp__subtitle">harvard university</h2>
+            <p class="c-exp__text">B.A. East Asian Studies and Sociology<br /> Harvard Crimson Photo Editor</p>
           </div>
-          <div class="c-exp__el ">
-            <img src="assets/usc-marshall.png " alt="Univeristy of Southern California Logo " class="c-exp__icon">
-            <h2 class="c-exp__subtitle ">University of Southern California Marshall School of Business</h2>
+          <div class="c-exp__el js-reveal">
+            <img src="assets/usc-marshall.png" alt="Univeristy of Southern California Logo" class="c-exp__icon">
+            <h2 class="c-exp__subtitle">University of Southern California Marshall School of Business</h2>
             <p class="c-exp__text">
               MBA Marketing and Entrepreneurship<br /> Beta Gamma Sigma national business honor society;<br/> VP, The Executive
               Committee entrepreneurship club;
@@ -109,7 +110,7 @@
   </section>
 
   <section class="c-currently">
-    <div class="c-currently__container o-content-container">
+    <div class="c-currently__container o-content-container js-reveal">
       <span class="c-currently__title--small c-small-text">currently</span>
       <span class="c-currently__description">Teaching 2 courses in the M.A. in Communications Management program:</span>
       <span class="c-currently__title">Lecturer + Adjunct Faculty, USC Annenberg School for Communication <br />University of Southern California</span>
@@ -126,13 +127,13 @@
     </div>
   </section>
 
-  <section class="c-meet" id="meet-freddy">
+  <section class="c-meet js-reveal" id="meet-freddy">
     <div class="o-content-container c-meet__container">
       <div class="c-meet__content o-grid o-grid--2-2">
         <div class="c-meet__photo-container">
           <img class="c-meet__photo" src="assets/freddy-j-nager-headshot.jpg" alt="Freddy J. Nager">
         </div>
-        <div>
+        <div class="c-meet__text-container">
           <h1 class="c-meet__title c-headline">Meet Freddy J. Nager</h1>
           <p class="c-meet__text">Over his nearly three decades in business, Freddy launched one of the world’s first entertainment sites (AMP: MCA
             Records Online). Won awards for Toyota’s digital media at major ad agency Saatchi & Saatchi. Creative directed
@@ -158,8 +159,8 @@
 
   <section class="c-others">
     <div class="o-base-container c-others-container">
-      <span class="c-others__title--small c-small-text">What others are saying about Freddy...</span>
-      <div class="c-others__els o-grid o-grid--3">
+      <span class="c-others__title--small c-small-text js-reveal">What others are saying about Freddy...</span>
+      <div class="c-others__els o-grid o-grid--3 js-reveal">
         <div class="c-others__el">
           <img class="c-others__photo" src="assets/a1.png" alt="Elena Mirzaians">
           <p class="c-others__text">“Without a doubt Freddy is one of the most memorable professors I've ever had! I learned so many hard-skills in
@@ -186,7 +187,7 @@
     </div>
   </section>
 
-  <section class="c-form" id="get-in-touch">
+  <section class="c-form js-reveal" id="get-in-touch">
     <div class="c-form__container o-content-container">
       <span class="c-form__title--small c-small-text">get in touch</span>
       <h1 class="c-form__title c-headline">Want Freddy to speak at your event <br />or consult your marketing plan?</h1>
@@ -211,18 +212,18 @@
     </div>
   </section>
 
-  <footer class="c-footer ">
-    <div class="o-base-container c-footer__content ">
-      <div class="c-footer__bar c-small-text ">
-        <span class="c-footer__el c-footer__title ">connect:</span>
-        <ul class="c-footer__links ">
-          <li><a href="http://www.linkedin.com/in/freddyjnager " class="c-footer__el " target="_blank">linkedin</a></li>
-          <li><a href="https://twitter.com/AtomicTango " class="c-footer__el " target="_blank">twitter</a></li>
-          <li><a href="http://www.atomictango.com/ " class="c-footer__el " target="_blank">blog</a></li>
-          <li><a href="mailto:freddy@atomictango.com " class="c-footer__el " target="_blank">contact</a></li>
+  <footer class="c-footer">
+    <div class="o-base-container c-footer__content">
+      <div class="c-footer__bar c-small-text">
+        <span class="c-footer__el c-footer__title">connect:</span>
+        <ul class="c-footer__links">
+          <li><a href="http://www.linkedin.com/in/freddyjnager" class="c-footer__el" target="_blank">linkedin</a></li>
+          <li><a href="https://twitter.com/AtomicTango" class="c-footer__el" target="_blank">twitter</a></li>
+          <li><a href="http://www.atomictango.com/" class="c-footer__el" target="_blank">blog</a></li>
+          <li><a href="mailto:freddy@atomictango.com" class="c-footer__el" target="_blank">contact</a></li>
         </ul>
       </div>
-      <span class="c-footer__copyright c-small-text ">© 2017 Freddy J. Nager</span>
+      <span class="c-footer__copyright c-small-text">© 2017 Freddy J. Nager</span>
     </div>
   </footer>
 </body>
