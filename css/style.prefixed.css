@@ -131,6 +131,16 @@ textarea {
   .o-grid--2-2 > * {
     width: calc((100% - 2 * 31px) / 2);
   }
+  .c-meet__photo-container {
+    -webkit-box-flex: 0.5;
+        -ms-flex: 0.5;
+            flex: 0.5;
+  }
+  .c-meet__text-container {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
 }
 .c-header {
   position: relative;
@@ -161,7 +171,7 @@ textarea {
   bottom: 0;
   left: 50%;
   -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 @media (max-aspect-ratio: 1920 / 1080) {
   .c-video {
@@ -396,16 +406,8 @@ textarea {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.c-meet__photo-container {
-  -webkit-box-flex: 0.5;
-      -ms-flex: 0.5;
-          flex: 0.5;
-}
 .c-meet__text-container {
   text-align: left;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
   max-width: 580px;
   margin-left: 50px;
 }
