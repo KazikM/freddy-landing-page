@@ -6,12 +6,11 @@ var ScrollLinks = {
     var _this = this
 
     var links = document.querySelectorAll(selector)
-
-    links.forEach(function(link) {
+    ;[].forEach.call(links, function(link) {
       return link.addEventListener("click", function(e) {
         var href = this.getAttribute("href")
 
-        if (!href.startsWith("#")) return
+        if (href[0] !== "#") return
         e.preventDefault()
 
         if (href === "#") ScrollLinks.to(0)
@@ -34,7 +33,9 @@ var ScrollLinks = {
       scrollTop = selectorOrNumber
     } else {
       var element = document.querySelector(selectorOrNumber)
-      scrollTop = scrollY + element.getBoundingClientRect().top
+      scrollTop =
+        (window.scrollY || document.documentElement.scrollTop) +
+        element.getBoundingClientRect().top
     }
 
     this.scrollAnimation = anime({

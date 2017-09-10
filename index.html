@@ -18,12 +18,14 @@
 
 <body>
   <header class="c-header">
-    <video class='c-header__video' playsinline autoplay loop muted poster="assets/header-poster.jpg">
-      <source src='assets/header-video.mp4' type='video/mp4'>
-    </video>
+    <div class='c-video-container'>
+      <video class='c-video' playsinline autoplay loop muted poster="assets/header-poster.jpg">
+        <source src='assets/header-video.mp4' type='video/mp4'>
+      </video>
+    </div>
     <div class="c-header__container">
       <div class="o-base-container c-header__top">
-        <svg width="210" viewBox="0 0 313.2 23.6" aria-labelledby="logo" role="img">
+        <svg width="210" height="16" viewBox="0 0 313.2 23.6" aria-labelledby="logo" role="img">
           <title id="logo">Freddy J. Nager</title>
           <path fill="#fff" d="M10.5 4.4H3.2v5h7v3h-7v10H0v-21h10.5v3zm16.3 9l6.5 8.9h-3.9l-6-8.6h-.6v8.6h-3.2V1.4h3.7c2.8 0 4.8.5 6 1.6 1.4 1.2 2 2.7 2 4.6 0 1.5-.4 2.8-1.3 3.8-.7 1.1-1.9 1.7-3.2 2zm-4-2.4h1c3 0 4.5-1.1 4.5-3.4 0-2.1-1.5-3.2-4.4-3.2h-1.1V11zm30.7-6.6h-8.4v5h8.1v3h-8.1v7h8.4v3H41.9v-21h11.6v3zm9.7 18v-21h4.4c2.1 0 3.8.2 5 .6 1.3.4 2.5 1.1 3.6 2.1 2.2 2 3.2 4.6 3.2 7.8s-1.1 5.8-3.4 7.8c-1.1 1-2.3 1.7-3.6 2.1-1.2.4-2.8.6-4.9.6h-4.3zm3.1-3h1.4c1.4 0 2.6-.1 3.5-.4s1.8-.8 2.5-1.5c1.6-1.4 2.3-3.3 2.3-5.5 0-2.3-.8-4.2-2.3-5.6-1.4-1.3-3.4-1.9-6.1-1.9h-1.4l.1 14.9zm22.6 3v-21h4.4c2.1 0 3.8.2 5 .6 1.3.4 2.5 1.1 3.6 2.1 2.2 2 3.2 4.6 3.2 7.8s-1.1 5.8-3.4 7.8c-1.1 1-2.3 1.7-3.6 2.1-1.2.4-2.8.6-4.9.6h-4.3zm3.2-3h1.4c1.4 0 2.6-.1 3.5-.4s1.8-.8 2.5-1.5c1.6-1.4 2.3-3.3 2.3-5.5 0-2.3-.8-4.2-2.3-5.6-1.4-1.3-3.4-1.9-6.1-1.9H92l.1 14.9zm25.7-6.1L111 1.4h3.6l4.8 8.4 4.8-8.4h3.6l-6.9 11.9v9h-3.2l.1-9zm38.5-11.9V15c0 1.6-.1 2.8-.3 3.6-.2.9-.6 1.7-1.2 2.3-1.1 1.2-2.5 1.9-4.2 1.9-1.3 0-2.6-.3-3.7-1l1.5-2.7c.8.5 1.5.8 2.2.8.9 0 1.6-.4 2-1.1s.6-2 .6-3.7V1.4h3.1zm10.4 19.4c0-.5.2-.9.6-1.3.4-.4.8-.6 1.3-.6s1 .2 1.3.6c.4.4.6.8.6 1.3s-.2 1-.6 1.3c-.4.4-.8.5-1.3.5s-1-.2-1.3-.5c-.4-.3-.6-.7-.6-1.3zm28.4 1.6V0l15.3 16V1.4h3.2v22.2L198.2 7.7v14.7h-3.1zm41.4-5.1h-9l-2.3 5.1h-3.4L232.2.2l10 22.2h-3.5l-2.2-5.1zm-1.3-3l-3.1-7.1-3.3 7.1h6.4zm25-2.8h8.6v.7c0 1.6-.2 3-.6 4.2-.4 1.1-1 2.2-1.8 3.1-1.9 2.2-4.4 3.3-7.4 3.3-2.9 0-5.4-1.1-7.5-3.2s-3.1-4.7-3.1-7.6c0-3 1.1-5.6 3.2-7.7 2.1-2.1 4.7-3.2 7.8-3.2 1.6 0 3.2.3 4.6 1s2.7 1.8 4 3.3l-2.3 2.2c-1.7-2.3-3.8-3.4-6.3-3.4-2.2 0-4.1.8-5.6 2.3s-2.2 3.4-2.2 5.6c0 2.3.8 4.3 2.5 5.8 1.6 1.4 3.3 2.1 5.1 2.1 1.6 0 3-.5 4.2-1.6s1.9-2.3 2.1-3.8h-5.2v-3.1h-.1zm29.7-7.1h-8.4v5h8.1v3h-8.1v7h8.4v3h-11.6v-21h11.6v3zm16.8 9l6.5 8.9h-3.9l-6-8.6h-.6v8.6h-3.2V1.4h3.7c2.8 0 4.8.5 6 1.6 1.4 1.2 2 2.7 2 4.6 0 1.5-.4 2.8-1.3 3.8-.7 1.1-1.8 1.7-3.2 2zm-4-2.4h1c3 0 4.5-1.1 4.5-3.4 0-2.1-1.5-3.2-4.4-3.2h-1.1V11z"
           />
@@ -127,13 +129,13 @@
     </div>
   </section>
 
-  <section class="c-meet js-reveal" id="meet-freddy">
+  <section class="c-meet" id="meet-freddy">
     <div class="o-content-container c-meet__container">
       <div class="c-meet__content o-grid o-grid--2-2">
-        <div class="c-meet__photo-container">
+        <div class="c-meet__photo-container js-reveal">
           <img class="c-meet__photo" src="assets/freddy-j-nager-headshot.jpg" alt="Freddy J. Nager">
         </div>
-        <div class="c-meet__text-container">
+        <div class="c-meet__text-container js-reveal">
           <h1 class="c-meet__title c-headline">Meet Freddy J. Nager</h1>
           <p class="c-meet__text">Over his nearly three decades in business, Freddy launched one of the world’s first entertainment sites (AMP: MCA
             Records Online). Won awards for Toyota’s digital media at major ad agency Saatchi & Saatchi. Creative directed
@@ -160,15 +162,15 @@
   <section class="c-others">
     <div class="o-base-container c-others-container">
       <span class="c-others__title--small c-small-text js-reveal">What others are saying about Freddy...</span>
-      <div class="c-others__els o-grid o-grid--3 js-reveal">
-        <div class="c-others__el">
+      <div class="c-others__els o-grid o-grid--3">
+        <div class="c-others__el js-reveal">
           <img class="c-others__photo" src="assets/a1.png" alt="Elena Mirzaians">
           <p class="c-others__text">“Without a doubt Freddy is one of the most memorable professors I've ever had! I learned so many hard-skills in
             one 15 week semester. His positive attitude and genuine enthusiasm for helping students learn new skills brings
             a fresh perspective to the classroom. He focuses on professional lessons learned and emphasizes tools and skills.”</p>
           <span class="c-others__name">Elena Mirzaians</span>
         </div>
-        <div class="c-others__el">
+        <div class="c-others__el js-reveal">
           <img class="c-others__photo" src="assets/a2.png" alt="Diran Yanikian">
           <p class="c-others__text">“We've hired many different brand strategists in the past and have never been completely satisfied with the vision
             they painted for our company. Until we met Freddy and his team... Freddy was amazing to work with. He and his
@@ -176,7 +178,7 @@
             we do.”</p>
           <span class="c-others__name">Diran Yanikian</span>
         </div>
-        <div class="c-others__el">
+        <div class="c-others__el js-reveal">
           <img class="c-others__photo" src="assets/a3.png" alt="Has Alexandra">
           <p class="c-others__text">“Freddy is unquestionably one of the best professors I've ever had the honor of working with. He is intelligent,
             enthusiastic, helpful and extremely well-versed in web-design, branding and marketing. His entrepreneurial spirit
