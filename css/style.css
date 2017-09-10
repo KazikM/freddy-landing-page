@@ -67,6 +67,19 @@ textarea {
   font: inherit;
 }
 
+.c-small-text {
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.c-headline {
+  font-size: 38px;
+  font-weight: 300;
+  line-height: 1.2;
+  text-align: center;
+}
+
 .o-base-container {
   width: 100%;
   max-width: 1460px;
@@ -151,15 +164,6 @@ textarea {
   padding-top: 40px;
 }
 
-.c-header__logo {
-  display: flex;
-  flex-wrap: nowrap;
-  text-transform: uppercase;
-  font-weight: 400;
-  font-size: 24px;
-  color: #fff;
-}
-
 .c-header__bar {
   display: flex;
   flex-direction: row;
@@ -209,6 +213,7 @@ textarea {
   color: #9e0b0f;
   transition: .4s ease-out;
   outline: none;
+  display: inline-block;
 }
 
 .c-btn:hover,
@@ -219,6 +224,10 @@ textarea {
 
 .c-btn--white {
   color: #fff;
+}
+
+.c-btn--high {
+  margin-top: 20px;
 }
 
 .c-header__bottom {
@@ -275,8 +284,8 @@ textarea {
 }
 
 .c-exp__subtitle {
-  padding-bottom: 25px;
-  font-size: 19px;
+  margin-bottom: 15px;
+  font-size: 16px;
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
@@ -323,7 +332,7 @@ textarea {
 
 .c-currently__title, .c-currently__subtitle {
   color: #fff;
-  font-size: 19px;
+  font-size: 16px;
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
@@ -345,10 +354,6 @@ textarea {
   align-items: center;
 }
 
-.c-currently__subtitle {
-
-}
-
 .c-currently__text {
   color: #6c6c6c;
   font-size: 15px;
@@ -362,8 +367,13 @@ textarea {
   color: #6c6c6c;
 }
 
-
 .c-meet__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.c-meet__content {
   justify-content: center;
 }
 
@@ -377,12 +387,12 @@ textarea {
 }
 
 .c-meet__title {
-  margin-top: -13px;
-  margin-bottom: 15px;
+  margin-top: -10px;
+  text-align: left;
 }
 
 .c-meet__text {
-  padding: 10px;
+  margin-top: 15px;
   font-size: 15px;
   line-height: 1.3;
 }
@@ -568,24 +578,11 @@ textarea:focus:-moz-placeholder {
   color: rgba(225, 225, 225, .5);
 }
 
-.c-small-text {
-  text-transform: uppercase;
-  font-size: 13px;
-  font-weight: 700;
-}
-
-.c-headline {
-  font-size: 53px;
-  font-weight: 300;
-  line-height: 1.2;
-  text-align: center;
-}
-
 @media (max-width: 900px) {
   input, textarea {
     width: 60vw;
   }
-  .c-meet__container {
+  .c-meet__content {
     flex-direction: column;
     align-items: center;
   }
@@ -598,7 +595,7 @@ textarea:focus:-moz-placeholder {
   }
 }
 
-@media (max-width: 670px) {
+@media (max-width: 690px) {
   body {
     background-image: 
     repeating-linear-gradient(
@@ -637,7 +634,7 @@ textarea:focus:-moz-placeholder {
 
 }
 
-@media (max-width: 570px) {
+@media (max-width: 595px) {
   .c-header__top {
     flex-direction: column;
     align-items: center;
