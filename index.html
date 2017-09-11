@@ -12,8 +12,13 @@
   <link rel="preload" as="font" type="font/woff2" crossorigin href="https://fonts.gstatic.com/s/opensans/v14/xjAJXh38I15wypJXxuGMBo4P5ICox8Kq3LLUNMylGO4.woff2">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.prefixed.css">
+  <script defer>
+    window.Promise || document.write('<script src="https://unpkg.com/es6-promise@3.2.1/dist/es6-promise.min.js" defer><\/script>');
+    window.fetch || document.write('<script src="https://unpkg.com/whatwg-fetch@1.0.0/fetch.js" defer><\/script>');
+  </script>
   <script src="js/anime.min.js" defer></script>
   <script src="js/script.js" defer></script>
+  <script src="https://www.google.com/recaptcha/api.js" defer></script>
 </head>
 
 <body>
@@ -193,21 +198,31 @@
     <div class="c-form__container o-content-container">
       <span class="c-form__title--small c-small-text">get in touch</span>
       <h1 class="c-form__title c-headline">Want Freddy to speak at your event <br />or consult your marketing plan?</h1>
-      <form action="submit.php">
+      <form id="contact-form" action="http://asista.pl/f/submit.php">
         <div class="c-form__form">
           <div class="c-form__el">
-            <input id="name" type="text" placeholder="Your Name" required>
+            <input id="name" name="name" type="text" placeholder="Your Name" required>
             <span for="name">required</span>
           </div>
           <div class="c-form__el">
-            <input id="mail" type="email" placeholder="Your Email" required>
-            <span for="mail">required</span>
+            <input id="email" name="email" type="email" placeholder="Your Email" required>
+            <span for="email">required</span>
           </div>
           <div class="c-form__el">
-            <textarea id="message" placeholder="Tell me about your business challenge" rows="1"></textarea>
+            <textarea id="message" name="message" placeholder="Tell me about your business challenge" rows="1"></textarea>
           </div>
         </div>
+        <div class="message success-message">
+          <div>Success message.</div>
+        </div>
+        <div class="message error-message">
+          <div>Error message.</div>
+        </div>
         <div class="c-form__el">
+          <div>
+            <div id='recaptcha' class="g-recaptcha" data-sitekey="6Ld5PTAUAAAAACZxuilSUwHkyDb-nvlavy89uNR6" data-callback="sendForm"
+              data-badge="inline" data-size="invisible"></div>
+          </div>
           <button class="c-btn c-small-text" type="submit">submit inquiry</button>
         </div>
       </form>

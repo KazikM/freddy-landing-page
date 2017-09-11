@@ -155,3 +155,35 @@ observePosition({
     isVisible && element.classList.add("js-visible")
   }
 })
+
+var form = document.querySelector("#contact-form")
+var btn = form.querySelector("[type='submit']")
+
+btn.addEventListener("click", function(e) {
+  if (!form.checkValidity()) return
+  e.preventDefault()
+  grecaptcha.execute()
+})
+
+var sendForm = function sendForm() {
+  return fetch(form.action, { method: "POST", body: new FormData(form) })
+    .then(function(res) {
+      return res.json()
+    })
+    .then(onResponse)
+    .catch(onResponse)
+}
+
+var onResponse = function onResponse(res) {
+  res.success && form.reset()
+  showMessage(res)
+  grecaptcha.reset()
+}
+
+var showMessage = function showMessage(success) {
+  var el = success
+    ? document.querySelector(".success-message")
+    : document.querySelector(".error-message")
+
+  el.style.height = el.scrollHeight + "px"
+}

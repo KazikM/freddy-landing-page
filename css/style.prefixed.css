@@ -717,3 +717,45 @@ textarea:focus:-moz-placeholder {
 .js-visible {
   opacity: 1 !important;
 }
+.g-recaptcha {
+  display: inline-block;
+  margin-top: 17px;
+}
+.message {
+  width: 40vw;
+  height: 0;
+  margin: auto;
+  overflow: hidden;
+  -webkit-transition: height 0.5s ease-out;
+  transition: height 0.5s ease-out;
+}
+@media (max-width: 900px) {
+  .message {
+    width: 60vw;
+  }
+}
+@media (max-width: 690px) {
+  .message {
+    width: 70vw;
+  }
+}
+@media (max-width: 595px) {
+  .message {
+    width: calc(80vw - 40px);
+  }
+}
+@media (max-width: 390px) {
+  .message {
+    width: calc(90vw - 40px);
+  }
+}
+.success-message > div {
+  padding: 15px 30px;
+  background-color: #4caf50;
+  color: #fff;
+}
+.error-message > div {
+  padding: 15px 30px;
+  background-color: #f44336;
+  color: #fff;
+}
