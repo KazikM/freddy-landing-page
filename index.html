@@ -198,7 +198,7 @@
     <div class="c-form__container o-content-container">
       <span class="c-form__title--small c-small-text">get in touch</span>
       <h1 class="c-form__title c-headline">Want Freddy to speak at your event <br />or consult your marketing plan?</h1>
-      <form id="contact-form" action="http://asista.pl/f/submit.php">
+      <form id="contact-form" action="submit.php">
         <div class="c-form__form">
           <div class="c-form__el">
             <input id="name" name="name" type="text" placeholder="Your Name" required>
@@ -213,15 +213,14 @@
           </div>
         </div>
         <div class="message success-message">
-          <div>Success message.</div>
+          <div>Thank you for your inquiry.</div>
         </div>
         <div class="message error-message">
-          <div>Error message.</div>
+          <div>Oops, something went wrong, try again.</div>
         </div>
         <div class="c-form__el">
           <div>
-            <div id='recaptcha' class="g-recaptcha" data-sitekey="6Ld5PTAUAAAAACZxuilSUwHkyDb-nvlavy89uNR6" data-callback="sendForm"
-              data-badge="inline" data-size="invisible"></div>
+            <div id='recaptcha' class="g-recaptcha" data-sitekey="__SITEKEY__" data-callback="sendForm" data-badge="inline" data-size="invisible"></div>
           </div>
           <button class="c-btn c-small-text" type="submit">submit inquiry</button>
         </div>
