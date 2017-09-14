@@ -187,3 +187,32 @@ var showMessage = function showMessage(success) {
 
   el.style.height = el.scrollHeight + "px"
 }
+
+const parallax = () => {
+  const [target, img] = document.querySelectorAll(
+    ".js-parallax, .js-parallax__img"
+  )
+  let windowHeight = innerHeight
+  let imgHeight = img.offsetHeight
+
+  window.addEventListener("resize", e => {
+    windowHeight = innerHeight
+    imgHeight = img.offsetHeight
+  })
+
+  window.addEventListener("scroll", e => {
+    const { top, bottom, height } = target.getBoundingClientRect()
+
+    if (top - 100 <= windowHeight && bottom + 100 >= 0) {
+      const currentPos = top - windowHeight
+      const scrollDistance = windowHeight + target.offsetHeight
+      const imgDistance = imgHeight - target.offsetHeight
+      const distance = currentPos / scrollDistance
+
+      img.style.transform = `translateY(${-imgDistance -
+        imgDistance * distance}px)`
+    }
+  })
+}
+
+parallax()
