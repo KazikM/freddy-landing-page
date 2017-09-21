@@ -188,31 +188,55 @@ var showMessage = function showMessage(success) {
   el.style.height = el.scrollHeight + "px"
 }
 
-const parallax = () => {
-  const [target, img] = document.querySelectorAll(
+var parallax = function parallax() {
+  var _document$querySelect = document.querySelectorAll(
     ".js-parallax, .js-parallax__img"
   )
-  let windowHeight = innerHeight
-  let imgHeight = img.offsetHeight
 
-  window.addEventListener("resize", e => {
+  var target = _document$querySelect[0]
+  var img = _document$querySelect[1]
+
+  var windowHeight = innerHeight
+  var imgHeight = img.offsetHeight
+
+  window.addEventListener("resize", function(e) {
     windowHeight = innerHeight
     imgHeight = img.offsetHeight
   })
 
-  window.addEventListener("scroll", e => {
-    const { top, bottom, height } = target.getBoundingClientRect()
+  window.addEventListener("scroll", function(e) {
+    var _target$getBoundingCl = target.getBoundingClientRect()
+
+    var top = _target$getBoundingCl.top
+    var bottom = _target$getBoundingCl.bottom
+    var height = _target$getBoundingCl.height
 
     if (top - 100 <= windowHeight && bottom + 100 >= 0) {
-      const currentPos = top - windowHeight
-      const scrollDistance = windowHeight + target.offsetHeight
-      const imgDistance = imgHeight - target.offsetHeight
-      const distance = currentPos / scrollDistance
+      var currentPos = top - windowHeight
+      var scrollDistance = windowHeight + target.offsetHeight
+      var imgDistance = imgHeight - target.offsetHeight
+      var distance = currentPos / scrollDistance
 
-      img.style.transform = `translateY(${-imgDistance -
-        imgDistance * distance}px)`
+      img.style.transform =
+        "translateY(" + (-imgDistance - imgDistance * distance) + "px)"
     }
   })
 }
 
 parallax()
+
+new Swiper(".swiper-container", {
+  autoplay: 5000,
+  loop: true,
+  grabCursor: true,
+  roundLengths: true,
+  spaceBetween: 40,
+  slidesPerView: 2,
+  pagination: ".swiper-pagination",
+  paginationClickable: true,
+  breakpoints: {
+    900: {
+      slidesPerView: 1
+    }
+  }
+})

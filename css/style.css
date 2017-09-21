@@ -366,27 +366,102 @@ textarea {
   font-size: 15px;
   line-height: 1.3;
 }
+.c-others-container {
+  max-width: 1200px;
+}
 .c-others {
   background-color: #ececec;
   color: #6c6c6c;
 }
-.c-others-container {
+.c-others__title--small {
   text-align: center;
-}
-.c-others__els {
-  justify-content: center;
-  padding-top: 60px;
-  padding-bottom: 30px;
 }
 .c-others__el {
-  text-align: center;
+  background-color: #fff;
+  padding: 30px;
+  position: relative;
 }
+
+.c-others__el::before {
+  content: "“";
+  font-size: 110px;
+  position: absolute;
+  top: -47px;
+  font-family: Arial;
+  font-weight: 700;
+}
+
+.c-others__el::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 55px solid #fff;
+  border-right: 50px solid transparent;
+  position: absolute;
+}
+
+.c-others__text {
+  font-size: 15px;
+  font-style: italic;
+  line-height: 1.4;
+}
+
+.c-others__author {
+  display: flex;
+  align-items: center;
+}
+
 .c-others__photo {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+}
+
+.c-others__description {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+}
+
+.c-others__name {
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.c-others__about {
+  margin-top: 7px;
+  font-size: 15px;
+  font-weight: 200;
+}
+
+.c-others__hr {
+  width: 100%;
+  height: 1px;
+  margin: 30px 0;
+  background-color: #ddd;
+  border: none;
+}
+
+.c-others__hr::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #9e0b0f;
+  transform-origin: left center;
+  transform: scale(0);
+  transition: 0.4s;
+}
+
+.c-others__el:hover .c-others__hr::after {
+  transform: scale(1);
+}
+
+/* .c-others__photo {
   border-radius: 50%;
 }
 .c-others__text {
   font-size: 15px;
-  font-style: italic;
   text-align: center;
   line-height: 1.4;
   padding-top: 30px;
@@ -395,7 +470,7 @@ textarea {
 .c-others__name {
   font-size: 19px;
   font-weight: 700;
-}
+} */
 .c-form {
   color: #6c6c6c;
 }
@@ -661,5 +736,31 @@ textarea:focus:-moz-placeholder {
   top: 0;
   background-position: 25% top;
   background-size: cover;
-  /* will-change: transform; <-- it makes it worse on iOS... */
+}
+
+.blacktext span,
+.blacktext p {
+  color: #565656 !important;
+}
+
+.swiper-container {
+  width: 100%;
+  padding: 90px 0;
+}
+
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  opacity: 0.15;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  background-color: #666;
+}
+
+.swiper-container-horizontal
+  > .swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  margin: 0 7px;
 }

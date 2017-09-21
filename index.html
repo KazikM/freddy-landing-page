@@ -11,12 +11,14 @@
   <link rel="preload" as="font" type="font/woff2" crossorigin href="https://fonts.gstatic.com/s/opensans/v14/DXI1ORHCpsQm3Vp6mXoaTegdm0LZdjqr5-oayXSOefg.woff2">
   <link rel="preload" as="font" type="font/woff2" crossorigin href="https://fonts.gstatic.com/s/opensans/v14/xjAJXh38I15wypJXxuGMBo4P5ICox8Kq3LLUNMylGO4.woff2">
   <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/style.prefixed.css">
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <link rel="stylesheet" href="css/style.css">
   <script defer>
     window.Promise || document.write('<script src="https://unpkg.com/es6-promise@3.2.1/dist/es6-promise.min.js" defer><\/script>');
     window.fetch || document.write('<script src="https://unpkg.com/whatwg-fetch@1.0.0/fetch.js" defer><\/script>');
   </script>
   <script src="js/anime.min.js" defer></script>
+  <script src="js/swiper.min.js" defer></script>
   <script src="js/script.js" defer></script>
   <script src="https://www.google.com/recaptcha/api.js" defer></script>
 </head>
@@ -68,8 +70,8 @@
     <div class="c-exp__container o-content-container">
       <div class="c-exp__content">
         <span class="c-exp__title--small c-small-text js-reveal">experience</span>
-        <h1 class="c-exp__title c-headline js-reveal">Freddy has over two decades of business experience serving clients, writing articles, and is currently teaching in
-          the USC Master of Communication Management program.</h1>
+        <h1 class="c-exp__title c-headline js-reveal">Freddy has over two decades of experience in both marketing strategy and creative content writing and direction.
+          He also currently teaches in the USC Master of Communication Management program, and speaks at conferences nationwide.</h1>
         <div class="o-grid o-grid--2">
           <div class="c-exp__el js-reveal">
             <h2 class="c-exp__subtitle">senior copywriter</h2>
@@ -78,20 +80,19 @@
           </div>
           <div class="c-exp__el js-reveal">
             <h2 class="c-exp__subtitle">senior content director</h2>
-            <p class="c-exp__text">Directed content for all West Coast clients of multimedia ad agency, Magnet Interactive including branding for
+            <p class="c-exp__text">Directed content for all West Coast clients of multimedia ad agency Magnet Interactive, including branding for
               $6 million Nissan/Infiniti account.</p>
           </div>
           <div class="c-exp__el js-reveal">
             <h2 class="c-exp__subtitle">creative strategist</h2>
-            <p class="c-exp__text">Founded creative strategy agency, <a href="http://www.atomictango.com/" class="c-exp__text--red" target="_blank">Atomic Tango</a>              serving entrepreneurs and evolved it into a media company with multiple ventures from <a href="http://www.atomictango.com/about/atomic-tango-marketing-podcast/"
-                class="c-exp__text--red" target="_blank">podcasts</a> to a popular <a href="http://www.atomictango.com/" class="c-exp__text--red"
-                target="_blank">blog</a> for creative professionals.
+            <p class="c-exp__text">Founded creative strategy agency <a href="http://www.atomictango.com/" class="c-exp__text--red" target="_blank">Atomic Tango</a>              and evolved it into a media company with multiple ventures, from <a href="http://www.atomictango.com/about/atomic-tango-marketing-podcast/"
+                class="c-exp__text--red" target="_blank">podcasts</a> to a popular blog for creative professionals.
             </p>
           </div>
           <div class="c-exp__el js-reveal">
-            <h2 class="c-exp__subtitle">founder & author</h2>
-            <p class="c-exp__text">Through a book, courses, and corporate workshops, The Influencer Code reveals how to identify, hire, and manage
-              influencers AND increase personal influence to achieve goals.</p>
+            <h2 class="c-exp__subtitle">public speaker</h2>
+            <p class="c-exp__text">American Marketing Association New Orleans, Renaissance Women Summit, Global Innovation Fellows, Fitness MBA
+              Summit, USC Alumni Association Social Entrepreneur Forum, Regional Independent School Communicators</p>
           </div>
         </div>
       </div>
@@ -101,11 +102,12 @@
           <div class="c-exp__el js-reveal">
             <img src="assets/harvard.png" alt="Harvard University Logo" class="c-exp__icon">
             <h2 class="c-exp__subtitle">harvard university</h2>
-            <p class="c-exp__text">B.A. East Asian Studies and Sociology<br /> Harvard Crimson Photo Editor</p>
+            <p class="c-exp__text">BA East Asian Studies and Sociology<br /> Harvard Crimson Photo Editor</p>
           </div>
           <div class="c-exp__el js-reveal">
             <img src="assets/usc-marshall.png" alt="Univeristy of Southern California Logo" class="c-exp__icon">
-            <h2 class="c-exp__subtitle">University of Southern California Marshall School of Business</h2>
+            <h2 class="c-exp__subtitle">University of Southern California
+              <BR>Marshall School of Business</h2>
             <p class="c-exp__text">
               MBA Marketing and Entrepreneurship<br /> Beta Gamma Sigma national business honor society;<br/> VP, The Executive
               Committee entrepreneurship club;
@@ -116,7 +118,7 @@
     </div>
   </section>
 
-  <section class="c-currently parallax js-parallax">
+  <section class="c-currently parallax js-parallax blacktext">
     <div class="parallax__img js-parallax__img" role="img" style="background-image: url(assets/freddy-parallax.jpg)"></div>
     <div class="c-currently__container o-content-container js-reveal">
       <span class="c-currently__title--small c-small-text">currently</span>
@@ -165,32 +167,92 @@
     </div>
   </section>
 
+
+
   <section class="c-others">
     <div class="o-base-container c-others-container">
       <span class="c-others__title--small c-small-text js-reveal">What others are saying about Freddy...</span>
-      <div class="c-others__els o-grid o-grid--3">
-        <div class="c-others__el js-reveal">
-          <img class="c-others__photo" src="assets/a1.png" alt="Elena Mirzaians">
-          <p class="c-others__text">“Without a doubt Freddy is one of the most memorable professors I've ever had! I learned so many hard-skills in
-            one 15 week semester. His positive attitude and genuine enthusiasm for helping students learn new skills brings
-            a fresh perspective to the classroom. He focuses on professional lessons learned and emphasizes tools and skills.”</p>
-          <span class="c-others__name">Elena Mirzaians</span>
+      <div class="swiper-container js-reveal">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide c-others__el">
+            <p class="c-others__text">“We've hired many different brand strategists in the past and have never been completely satisfied with the vision
+              they painted for our company. Until we met Freddy and his team... Freddy was amazing to work with. He and his
+              team took the time to interview our clients and staff to really dive deep into who we are and why we do what
+              we do.”</p>
+            <hr class="c-others__hr">
+            <div class="c-others__author">
+              <img class="c-others__photo" src="assets/a2.png" alt="Diran Yanikian">
+              <div class="c-others__description">
+                <span class="c-others__name">Diran Yanikian</span>
+                <span class="c-others__about">Founder of Dirango, a Digital Agency</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide c-others__el">
+            <p class="c-others__text">"Freddy Nager is a 'rock star' to his students. He is extremely knowledgeable and able to communicate on any
+              level from novice to executive. He understands how to make social media WORK for you in a business environment.
+              He is very creative, and, unlike most creatives, he is very willing to share his knowledge."</p>
+            <hr class="c-others__hr">
+            <div class="c-others__author">
+              <img class="c-others__photo" src="assets/Picture2.png" alt="Dr. Pat Palleschi">
+              <div class="c-others__description">
+                <span class="c-others__name">Dr. Pat Palleschi</span>
+                <span class="c-others__about">President of The Executive Agency<BR>Adjunct Professor, Antioch University Los Angeles</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide c-others__el">
+            <p class="c-others__text">"I can’t say enough great things about Freddy. He’s a wonderfully diverse strategic thinker, spanning the marketing
+              space to fine arts. I had the good fortune of using Freddy as a contributor for my transmedia blog JawboneTV.
+              His pieces were not only focused on the most cutting edge art and film projects (predominantly of Freddy’s
+              choosing), but they were also some of the highest traffic generators – a mark of quality writing and audience
+              connection. Highest recommendations."</p>
+            <hr class="c-others__hr">
+            <div class="c-others__author">
+              <img class="c-others__photo" src="assets/Picture3.png" alt="Todd Denis">
+              <div class="c-others__description">
+                <span class="c-others__name">Todd Denis</span>
+                <span class="c-others__about">Executive Director, Digital Strategy<BR>Cineplex Entertainment</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide c-others__el">
+            <p class="c-others__text">"As a student in Professor Freddy Nager's Marketing Management class (MBA), I was impressed by his 'hands on'
+              teaching abilities enabling him to direct and provoke class participation and involvement in a way that captured
+              and held our attention and encouraged us to rethink things critically and creatively. His direction and active
+              responses opened new avenues of thought in marketing, which is essential in today's competitive business world."</p>
+            <hr class="c-others__hr">
+            <div class="c-others__author">
+              <img class="c-others__photo" src="assets/Picture4.png" alt="Jonathan Segal">
+              <div class="c-others__description">
+                <span class="c-others__name">Jonathan Segal</span>
+                <span class="c-others__about">Founder, Urban Kanga</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide c-others__el">
+            <p class="c-others__text">“Freddy Nager is an exceptional presenter, delivering quality content with an engaging style! I have been booking
+              speakers for 10+ years, most recently on behalf of the American Marketing Association’s New Orleans Chapter,
+              and Freddy really stands out. He was able to deliver fresh content and new concepts, which attendees told me
+              they could easily comprehend and apply to their own marketing practice immediately. His presentations are interactive
+              and inspiring. After his presentation in New Orleans, I had numerous attendees thank me for ‘finding’ Freddy,
+              and the post-event evaluations were filled with 5-star comments.”</p>
+            <hr class="c-others__hr">
+            <div class="c-others__author">
+              <img class="c-others__photo" src="assets/Picture1.png" alt="Sandy Beauchesne">
+              <div class="c-others__description">
+                <span class="c-others__name">Sandy Beauchesne</span>
+                <span class="c-others__about">American Marketing Association, New Orleans</span>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="c-others__el js-reveal">
-          <img class="c-others__photo" src="assets/a2.png" alt="Diran Yanikian">
-          <p class="c-others__text">“We've hired many different brand strategists in the past and have never been completely satisfied with the vision
-            they painted for our company. Until we met Freddy and his team... Freddy was amazing to work with. He and his
-            team took the time to interview our clients and staff to really dive deep into who we are and why we do what
-            we do.”</p>
-          <span class="c-others__name">Diran Yanikian</span>
-        </div>
-        <div class="c-others__el js-reveal">
-          <img class="c-others__photo" src="assets/a3.png" alt="Has Alexandra">
-          <p class="c-others__text">“Freddy is unquestionably one of the best professors I've ever had the honor of working with. He is intelligent,
-            enthusiastic, helpful and extremely well-versed in web-design, branding and marketing. His entrepreneurial spirit
-            is inspiring! I am thankful for all the knowledge he has shared with me and my classmates.”</p>
-          <span class="c-others__name">Has Alexandra</span>
-        </div>
+        <div class="swiper-pagination"></div>
       </div>
     </div>
   </section>
@@ -198,7 +260,7 @@
   <section class="c-form js-reveal" id="get-in-touch">
     <div class="c-form__container o-content-container">
       <span class="c-form__title--small c-small-text">get in touch</span>
-      <h1 class="c-form__title c-headline">Want Freddy to speak at your event <br />or consult your marketing plan?</h1>
+      <h1 class="c-form__title c-headline">Want Freddy to enhance your marketing and media <br />or speak at your next event?</h1>
       <form id="contact-form" action="submit.php">
         <div class="c-form__form">
           <div class="c-form__el">
